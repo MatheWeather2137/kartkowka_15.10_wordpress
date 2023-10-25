@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100vh;
+    grid-template-areas: 
+    "lewo prawo";
+}
+#lewo{
+    grid-area: lewo;
+    background-color: lightslategray;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+#prawo{
+    grid-area: prawo;
+    background-color: lightslategray;
+    border-left: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#prawodiv{
+    height: 350px;
+    width: 300px;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: gray;
+    border-radius: 10px;
+}
+.divy{
+    height: 300px;
+    width: 300px;
+    background-color: gray;
+    border-radius: 10px;
+    border:2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
